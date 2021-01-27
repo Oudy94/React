@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #181818;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.city-card{
+    border: 1px solid #2196F3;
+    margin: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 205px;
+}
+
+.card-padding {
+    padding-bottom: 20px;
+    display: block;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h4{
+    font-size: 14px;
+}
+
+.form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+.form button {
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #0b7dda;
+}
+
+.loading-img{
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
