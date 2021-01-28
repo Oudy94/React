@@ -1,4 +1,3 @@
-import React from 'react';
 
 function HobbyList() {
     const hobbies = ['Surfing', 'Rock climbing', 'Mountain biking', 'Breakdancing'];
@@ -6,18 +5,12 @@ function HobbyList() {
     return (
         <div>
             {hobbies.map(hobby => {
-                return <Hobbies hobby={hobby} />
+                return <Hobby hobby={hobby} />
             })}
         </div>
     );
 }
 
-function Hobbies({hobby}) {
-    return (
-        <div>
-            <h1>{hobby}</h1>
-        </div>
-    );
-}
+const Hobby = ({hobby}) => <h1>{hobby}</h1>;
 
 export default HobbyList;
