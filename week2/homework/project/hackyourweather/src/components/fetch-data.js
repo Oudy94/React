@@ -9,6 +9,7 @@ function useFetchData(url) {
     const didMount = useRef(false);
 
     useEffect(() => {
+        //To make sure that the fetch will not execute on the first load (On Mount)
         if (didMount.current){
             async function fetchData() {
                 setIsLoading(true);
