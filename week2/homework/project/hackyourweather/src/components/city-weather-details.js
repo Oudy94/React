@@ -23,11 +23,11 @@ function CityWeatherDetails({data, isLoading, hasError}) {
                         <h4>{weather[0].description}</h4>
                     </div>
                     <div className="card-padding">
-                        <h4>{"Max temp: " + main.temp_max}</h4>
-                        <h4>{"Min temp: " + main.temp_min}</h4>
+                        <h4>Max temp: {main.temp_max}</h4>
+                        <h4>Min temp: {main.temp_min}</h4>
                     </div>
                     <div className="card-padding">
-                        <h4>{"Location: " + coord.lon + ", " + coord.lat}</h4>
+                        <h4>Location: {coord.lon}, {coord.lat}</h4>
                     </div>
                 </div>
             : <h2>Enter a city name..</h2>}
