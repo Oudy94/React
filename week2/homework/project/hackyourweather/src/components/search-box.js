@@ -1,7 +1,6 @@
 import {useState} from 'react';
 
 function SearchBox({setSearchCity}) {
-
     const [cityName, setCityName] = useState("")
 
     function handleSubmit(event){
