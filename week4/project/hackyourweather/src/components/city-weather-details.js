@@ -24,7 +24,7 @@ function CityWeatherDetails({data, isLoading, hasError, setSearchCityName}) {
     return (
         <div>
         {isLoading && <img src={loadingImage} alt="loading" className="loading-img" />}
-        {Object.keys(citiesData).length > 0 ?
+        {citiesData.length > 0 ?
             citiesData.map((cityData, index) => {
                 return(
                     <div className="city-card" key={index}>
@@ -32,7 +32,7 @@ function CityWeatherDetails({data, isLoading, hasError, setSearchCityName}) {
                             <div className="leftright"></div>
                             <div className="rightleft"></div>
                         </button>
-                        <Link to= {`/${cityData.id}`} >
+                        <Link to={`/${cityData.id}`} >
                             <div className="city-card-link">
                                 <div className="card-section">
                                     <h2>{cityData.name}, {cityData.sys.country}</h2>
