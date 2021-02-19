@@ -22,7 +22,6 @@ function useFetch(url) {
                         }
                     }
                     catch (error) {
-                        console.log(error);
                         setHasError(true);
                     }
                     finally{
